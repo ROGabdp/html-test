@@ -18,9 +18,18 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
    - Node.js: `npx serve .`
    - VS Code: 使用 Live Server 擴充套件
 
+## 架構原則
+
+**關注點分離 (Separation of Concerns)**：
+- 網頁結構只在 HTML 中定義
+- 樣式只在 CSS 中定義
+- 互動功能只在 JavaScript 中實作
+
 ## 程式碼規範
 
 - **語言設定**: 繁體中文（zh-TW）- 所有 `lang` 屬性和內容都應使用 zh-TW
-- **路徑慣例**: 所有相對路徑必須使用 `./` 前綴以保持一致性（例如：`./about.html`、`./images/goal1.png`）
+- **路徑慣例**: 所有相對路徑必須使用 `./` 前綴以保持一致性（例如：`./about.html`、`./style.css`、`./images/goal1.png`）
 - **頁面結構**: 每個 HTML 頁面都應包含導航連結以連接到網站中的其他頁面
-- claude.md裡面的說明也用繁體中文
+- **樣式管理**: 使用 `style.css` 作為共用樣式表，所有 HTML 頁面都應連結此檔案
+- **字體設定**: CSS 中使用 Arial 搭配「微軟正黑體」(Microsoft JhengHei) 以支援繁體中文顯示
+- claude.md 裡面的說明也用繁體中文
